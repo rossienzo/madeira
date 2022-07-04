@@ -1,0 +1,20 @@
+
+/* listar.jsp */
+.msg{
+	text-align: center;
+}
+
+.error {
+	background-color: #df3649;
+	color: #FFF;
+}
+
+.success {
+	background-color: #1ee96f;
+	color: #066605;
+}
+
+/* formAtualizar.jsp */
+form .idinput { 
+	display: none;
+}

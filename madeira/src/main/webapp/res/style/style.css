@@ -1,0 +1,314 @@
+/* Style*/
+:root {
+    --main-background: #F4F4F4;
+    --text-color: #3C3B3B;
+    --border-color: #E2E2E2;
+    --icon-color: #b6b6b6;
+}
+
+* {
+    font-family: 'Roboto', Verdana, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;	
+}
+
+body {
+	background: #5a0404;
+	position: relative;
+}
+
+#body-image {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/marcenaria.jpg");
+	background-size: cover;
+	-webkit-mask-image: linear-gradient(to top, #00000073 25%, black 100%);
+	z-index: -999;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+	background: var(--main-background);
+	border-bottom: 1px solid grey;
+	border-left: 1px solid grey;
+	border-right: 1px solid grey;
+	z-index: 10;
+}
+
+.container {
+	width: 100%;
+    height: 100%;
+    
+	padding: 0 30px;
+}
+
+main .container {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .container {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main, footer {
+	margin-top: 20px;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 65px;
+	overflow: hidden;
+	background-color: crimson;	
+}
+
+header h1 {
+	white-space: nowrap;
+	text-transform: uppercase;
+	padding: 5px 0;
+	border-top: 2px solid white;
+    border-bottom: 2px solid white; 
+    font-size: 1em;
+	color: #FFF;
+}
+
+header a {
+	font-size: 1.3em;
+	font-weight: 400;
+	color: #FFF;
+}
+
+nav{
+	width: 100%;
+}
+
+nav ul {
+	display: flex;
+	justify-content: flex-end;
+}
+
+nav ul li a{
+	padding: 10px 15px 5px 15px;
+	height: 100%;
+	font-size: 1em;
+}
+
+nav ul li a:hover{
+	border-bottom: .150em solid #FFF;
+    background: #b71717;
+}
+
+nav ul li:last-child {
+	margin-right: 20px
+}
+
+header .selected {
+	border-bottom: .150em solid #FFF;
+    background: #b71717;
+}
+
+/* Main - Section */
+main .title {
+	text-transform: uppercase;
+}
+
+main .description {
+	display: flex;
+}
+
+main .description .description-text p {
+	margin-right: 20px;
+    margin-top: 20px;
+	line-height: 1.5em;
+    text-align: justify;
+}
+
+main .description img{
+	max-width: 600px;
+}
+
+#nosso-time {
+	background: #ff5a5a45;
+	margin: 30px 0;
+	padding: 40px 30px;
+}
+
+#nosso-time h1 {
+	font-weight: 500;
+	font-size: 1.6em;
+	text-align: center;
+    text-transform: uppercase;
+    color: #b51231;
+}
+
+#nosso-time .menu-cards {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+}
+
+#nosso-time .menu-cards .card {
+	margin: 20px 20px 0 20px;
+	background: #FFF;
+	border: 1px solid #e53a3a8f;
+}
+
+#nosso-time .menu-cards .card img {
+	max-width: 200px;
+}
+
+#nosso-time .menu-cards .card .detail{
+	padding: 10px;
+	text-align: center;
+}
+
+footer {
+	padding: 5px;
+	text-align: center;
+	background: #b51231;
+}
+
+footer span {
+	color: #FFF;
+}
+
+
+/* Login */
+
+#page-login {
+	margin: 2em 0;	
+}
+
+#page-login .container{
+	flex-direction: row;
+	justify-content: center;
+	align-items: initial;
+}
+
+form {
+	position: relative; /* Para a msg*/
+	display: flex;
+    flex-direction: column;
+	border: 1px solid #d1d1d1;
+    background: #e7e1e1;
+    padding: 30px 50px;
+}
+
+form h3 {
+	text-transform: uppercase;
+	text-align: center;
+	color: crimson;
+}
+
+
+form label {
+	margin-top: 1em;
+	color: crimson;
+}
+
+form input[type=text], form input[type=password], select {
+	margin-top: 1em;
+    background: #FFF;
+    border: 1px solid #ed143d;
+    padding: 10px 20px;
+    color: crimson;
+}
+
+
+form input[type=submit]{
+	margin-top: 1em;
+	margin-bottom: 20px;
+	background: crimson;
+    border: none;
+    color: #FFF;
+    text-transform: uppercase;
+    padding: 12px 22px;
+    font-weight: 500;	
+    cursor: pointer;
+}
+
+form .msg {
+   	padding: 8px;
+    text-align: center;
+    background: aliceblue;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+}
+
+.msg.error {
+	background-color: #e9bd1e;
+}
+
+.msg.success {
+	background-color: #1ee96f;
+	color: #066605;
+}
+
+#form-login{
+	background: #FFF;
+}
+
+#form-create {
+	background: crimson;
+}
+
+#form-create h3 {
+	color: #FFF;
+}
+
+#form-create label{
+	color: #FFF;
+}
+
+#form-create input[type=submit] {
+	background: #FFF;
+	color: crimson;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 990px) {
+ 	main .description img {
+		max-width: 500px;
+	}
+}
+
+@media only screen and (max-width: 830px) {
+ 	main .description img {
+		max-width: 400px;
+	}
+}
+
+@media only screen and (max-width: 780px) {
+	 main .description img {
+		display: none;
+	 }
+	
+	 #nosso-time .menu-cards {
+	 	justify-content: center;
+	 }
+}
